@@ -1,0 +1,9 @@
+auth:
+  postgresPassword: MySecretPass   # Change this to your secure password
+
+primary:
+  persistence:
+    enabled: true
+    existingClaim: postgresql-pv-claim  # Name of the PVC you created manually
+    storageClass: ""                # Leave empty when using existingClaim
+

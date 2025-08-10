@@ -1,0 +1,12 @@
+controller:
+  publishService:
+    enabled: true
+  ingressClassResource:
+    default: true
+  extraArgs:
+    enable-ssl-passthrough: ""
+  service:
+    loadBalancerIP: 34.142.209.221
+  admissionWebhooks:
+    enabled: true
+    failurePolicy: Ignore

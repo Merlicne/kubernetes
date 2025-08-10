@@ -1,0 +1,16 @@
+apiVersion: postgresql.cnpg.io/v1
+kind: Cluster
+metadata:
+  name: postgres
+spec:
+  instances: 1
+  storage:
+    size: 20Gi
+    storageClass: manual
+    pvcTemplate:
+      metadata:
+        name: postgresql-pv-claim
+  bootstrap:
+    initdb:
+      database: app
+      owner: app

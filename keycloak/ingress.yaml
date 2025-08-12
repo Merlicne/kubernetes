@@ -10,10 +10,10 @@ metadata:
 spec:
   tls:
     - hosts:
-        - keycloak.merl-app.com
+        - keycloak.merldev.com
       secretName: keycloak-tls
   rules:
-    - host: keycloak.merl-app.com
+    - host: keycloak.merldev.com
       http:
         paths:
           - path: /

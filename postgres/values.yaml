@@ -5,5 +5,5 @@ primary:
   persistence:
     enabled: true
     existingClaim: postgresql-pv-claim  # Name of the PVC you created manually
-    storageClass: ""                # Leave empty when using existingClaim
+    storageClass: manual  # Must match storageClassName in postgres/postgres-pv.yaml
 
